@@ -1,0 +1,36 @@
+//ARRAY MAIN PROGRAM
+
+package com.java.assignment1;
+
+import java.util.Scanner;
+
+public class Arrayprg {
+
+	public static void main(String[] args) { //MAIN FUNCTION
+		// TODO Auto-generated method stub
+
+		int [] array1 = new int[9]; //ARRAY DECLARATION
+		Scanner S = new Scanner(System.in); //SCANNER OBJECT CREATION
+		for (int i=0;i<9;i++)//READING ELEMENTS IN TO ARRAY
+			
+		{
+			System.out.println("Enter Element" +i +"in to array");
+			array1[i]=S.nextInt();
+		}
+		
+		System.out.println("Elements in array");//PRINTING ELEMENTS OF THE ARRAY
+		for (int i=0;i<9;i++)
+			
+		{
+			System.out.println(array1[i]);
+		}
+		
+		System.out.println("Elements After Reversing in array"); //PRINTING ELEMENTS OF THE ARRAY IN REVERSE WAY
+		for (int i=9;i>=0;i--)
+			
+		{
+			System.out.println(array1[i]);
+		}	
+	}
+
+}
